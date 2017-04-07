@@ -46,3 +46,29 @@ skills = {
         "Skill 17" : "Git",
 }
 start_screen()
+
+def progress_check(skills):
+    '''input -> dict
+       output -> lists, complete lists and incomplete lists
+    '''
+    complete = []
+    incomplete = []
+
+    if type(skills) != type({}):
+        return "invalid input"
+    if type(choice) != type(""):
+        return "please insert a string"
+
+    for key in skills:
+        print("Have you completed" %d.format(skills[key]))
+        choice = input()
+        choice = choice.upper()
+
+        if choice == "YES":
+            complete.append(skills[key])
+            return complete
+        elif choice == "NO":
+            incomplete.append(skills[key])
+            return incomplete
+
+progress_check(skills)
