@@ -9,10 +9,7 @@ class Learning_map_tracker(TestCase):
         output=progress_check()
         self.assertTrue(type(output), (type, 'list'), 'Must return a list')
 
-    def test_start_screen_execution(self,mock):
-        start_screen()
-        self.assertTrue(mock.called, 'The function has been called')
-
+    
     def test_progress_checker_execution(self,mock):
         progress_checker()
         self.assertTrue(mock.called, 'The function has been called')
