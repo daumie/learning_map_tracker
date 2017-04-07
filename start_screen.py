@@ -45,3 +45,15 @@ skills = {
         "Skill 16" : "Writing Professionally",
         "Skill 17" : "Git",
 }
+
+
+
+
+
+def progress_checker:
+
+#returns the progress report as a percentage
+
+	progress_report = int((len[complete] / len(skills.keys())) * 100)
+
+	print ('Your progress report is %d' % progress_report)
