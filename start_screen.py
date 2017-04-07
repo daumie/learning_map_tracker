@@ -1,7 +1,7 @@
 def start_screen():
 	print("WELCOME TO ANDELA LEARNING MAP TRACKER")
 	print("======================================")
-	print("BELOW IS A LIST OF SKILLS TESTED")
+	print("PLEASE PICK COMPLETED TASKS")
 	print("--------------------------------")
 	print("1.Version Control")
 	print("2.Agile Methodology")
@@ -45,7 +45,7 @@ skills = {
         "Skill 16" : "Writing Professionally",
         "Skill 17" : "Git",
 }
-start_screen()
+# start_screen()
 
 def progress_check(skills):
     '''input -> dict
@@ -56,7 +56,7 @@ def progress_check(skills):
 
     if type(skills) != type({}):
         return "invalid input"
-    if type(choice) != type(""):
+    if type(skills) != type(""):
         return "please insert a string"
 
     for key in skills:
@@ -71,4 +71,47 @@ def progress_check(skills):
             incomplete.append(skills[key])
             return incomplete
 
-progress_check(skills)
+#progress_check(skills)
+def user_input():
+	Choice = int(input("Select your Skills Completed: \n"))
+	if (Choice == 1):
+		print("Selected as done: Version Control")
+	elif (Choice == 2):
+		print("Selected as done: Agile Methodology")
+	elif (Choice == 3):
+		print("Selected as done: Programming Logic")
+	elif (Choice == 4):
+		print("Selected as done: Object Oriented Programming ")
+	elif (Choice == 5):
+		print("Selected as done: Test-Driven Development ")
+	elif (Choice == 6):
+		print("Selected as done: Databases ")
+	elif (Choice == 7):
+		print("Selected as done: HTTP and Web Services")
+	elif (Choice == 8):
+		print("Selected as done: Front-End Development")
+	elif (Choice == 9):
+		print("Selected as done: Growth Mindset")
+	elif (Choice == 10):
+		print("Selected as done: Relationship Building")
+	elif (Choice == 11):
+		print("Selected as done: Asks Questions ")
+	elif (Choice == 12):
+		print("Selected as done: Motivation and Commitment")
+	elif (Choice == 13):
+		print("Selected as done: Adaptability")
+	elif (Choice == 14):
+		print("Selected as done: Seeks Feedback")
+	elif (Choice == 15):
+		print("Selected as done: Speaking to be Understood")
+	elif (Choice == 16):
+		print("Selected as done: Writing Professionally")
+	elif (Choice == 17):
+		print("Selected as done: Git")
+	else:
+		print("Invalid Choice ")
+
+start_screen()
+user_input()
+
+	
